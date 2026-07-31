@@ -1,8 +1,21 @@
 aid: oligo
 name: Oligo
-description: Oligo is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Oligo Security is a runtime security platform built for the AI era, giving security
+  teams real-time visibility and protection across applications, cloud infrastructure,
+  and AI systems. Oligo combines Cloud Application Detection and Response (CADR),
+  runtime software composition analysis (SCA) and SBOM generation, container scanning,
+  and AI security posture management to detect and stop attacks at the application
+  layer before they spread. By observing which vulnerable code actually executes at
+  runtime, Oligo proves exploitability and reduces vulnerability noise by up to
+  90-99%, letting teams prioritize the small fraction of findings that are truly
+  reachable. The platform covers apps, workloads, hosts, and cloud infrastructure,
+  and adds runtime protection for AI agents and models. Oligo is a portfolio company
+  of Lightspeed Venture Partners and counts organizations such as Databricks,
+  Salesforce, ServiceNow, Instacart, and Cresta among its customers. Its customer
+  platform and API documentation are gated behind authentication; no public REST API,
+  OpenAPI specification, SDK, CLI, or MCP server is published on the open web at the
+  time of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/oligo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +23,53 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Security
+- Application Security
+- Runtime Security
+- Cloud Security
+- AI Security
+- Vulnerability Management
+- CADR
+- SBOM
+- Software Composition Analysis
+image: https://oligo.security/favicon.ico
 apis: []
+common:
+- type: DomainSecurity
+  url: security/oligo-domain-security.yml
+- type: Website
+  url: https://oligo.security
+- type: Documentation
+  url: https://support.oligo.security
+- type: Blog
+  url: https://www.oligo.security/resources/blog
+- type: TermsOfService
+  url: https://www.oligo.security/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.oligo.security/legal/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
